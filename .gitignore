@@ -4,4 +4,4 @@
 .gitignore
 src/.*
 src/*/.*
-
+.venv
