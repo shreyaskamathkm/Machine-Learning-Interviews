@@ -1,0 +1,24 @@
+[lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "N",  # pep8-naming
+    "B",  # flake8-bugbear
+    "A",  # flake8-builtins
+    "C4", # flake8-comprehensions
+]
+ignore = [
+    "E501", # line too long, handled by formatter
+]
+
+# Allow star imports and print in notebooks for convenience
+[lint.per-file-ignores]
+"*.ipynb" = ["F403", "F405", "T201"]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
